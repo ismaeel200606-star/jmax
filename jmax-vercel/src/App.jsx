@@ -7,7 +7,7 @@ const JAW_TYPES = ["Mogger", "Strong", "Average", "Soft", "Razor"];
 
 export default function App() {
   const [title, setTitle] = useState("CHAD"); // make title editable
-  const [mindset, setMindset] = useState("MINDSETS");
+  const [mindset, setMindset] = useState("Bluepilled");
   const [strategy, setStrategy] = useState(STRATEGIES[0]);
   const [jawType, setJawType] = useState(JAW_TYPES[0]);
   const [breathing, setBreathing] = useState("Nose breather");
@@ -92,6 +92,18 @@ export default function App() {
               <InfoBlock label="Jawline Type" value={jawType} bar={bars.jaw} />
               <InfoBlock label="Breathing" value={breathing} bar={bars.breathing} />
               <InfoBlock label="Appeal Level" value={appeal} bar={bars.appeal} />
+              {/* PSL Scale dropdown (1–8) */}
+              <label style={styles.label}>PSL Scale
+              <select
+              style={styles.input}
+               value={pslScore}
+               onChange={(e) => setPslScore(e.target.value)}
+              >
+              {[1,2,3,4,5,6,7,8].map(n => (
+              <option key={n} value={n.toString()}>{n}</option>
+               ))}
+              </select>
+              </label>
             </div>
           </div>
 
