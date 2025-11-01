@@ -51,9 +51,10 @@ export default function App() {
           <TextField label="Title (CHAD)" value={title} onChange={setTitle} />
 
           <div style={{ marginTop: 16 }}>
-            <Picker label="Mindset" value={mindset} setValue={setMindset} options={MINDSETS} />
-            <Picker label="Strategy" value={strategy} setValue={setStrategy} options={STRATEGIES} />
-            <Picker label="Jawline Type" value={jawType} setValue={setJawType} options={JAW_TYPES} />
+           <TextField label="Mindset" value={mindset} onChange={setMindset} />
+           <TextField label="Strategy" value={strategy} onChange={setStrategy} />
+           <TextField label="Jawline Type" value={jawType} onChange={setJawType} />
+
             <TextField label="Breathing" value={breathing} onChange={setBreathing} />
             <TextField label="Appeal Level" value={appeal} onChange={setAppeal} />
           </div>
