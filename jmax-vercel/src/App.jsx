@@ -7,7 +7,7 @@ const JAW_TYPES = ["Mogger", "Strong", "Average", "Soft", "Razor"];
 
 export default function App() {
   const [title, setTitle] = useState("CHAD"); // make title editable
-  const [mindset, setMindset] = useState(MINDSETS[0]);
+  const [mindset, setMindset] = useState("MINDSETS");
   const [strategy, setStrategy] = useState(STRATEGIES[0]);
   const [jawType, setJawType] = useState(JAW_TYPES[0]);
   const [breathing, setBreathing] = useState("Nose breather");
