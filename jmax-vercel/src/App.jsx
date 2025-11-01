@@ -63,6 +63,18 @@ export default function App() {
                   </label>
 
             <TextField label="Appeal Level" value={appeal} onChange={setAppeal} />
+             {/* PSL Scale dropdown (1–8) */}
+              <label style={styles.label}>PSL Scale
+              <select
+              style={styles.input}
+               value={pslScore}
+               onChange={(e) => setPslScore(e.target.value)}
+              >
+              {[1,2,3,4,5,6,7,8].map(n => (
+              <option key={n} value={n.toString()}>{n}</option>
+               ))}
+              </select>
+              </label>
           </div>
 
           <div style={{ marginTop: 20 }}>
@@ -92,18 +104,7 @@ export default function App() {
               <InfoBlock label="Jawline Type" value={jawType} bar={bars.jaw} />
               <InfoBlock label="Breathing" value={breathing} bar={bars.breathing} />
               <InfoBlock label="Appeal Level" value={appeal} bar={bars.appeal} />
-              {/* PSL Scale dropdown (1–8) */}
-              <label style={styles.label}>PSL Scale
-              <select
-              style={styles.input}
-               value={pslScore}
-               onChange={(e) => setPslScore(e.target.value)}
-              >
-              {[1,2,3,4,5,6,7,8].map(n => (
-              <option key={n} value={n.toString()}>{n}</option>
-               ))}
-              </select>
-              </label>
+             
             </div>
           </div>
 
