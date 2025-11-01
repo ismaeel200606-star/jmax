@@ -181,7 +181,17 @@ function InfoBlock({ label, value, bar }) {
 }
 
 const styles = {
-  page: { minHeight: "100vh", background: "#000", color: "#fff", display: "grid", gridTemplateColumns: "420px 1fr", gap: 16, padding: 16 },
+  page: {
+  minHeight: "100vh",
+  background: "#000",
+  color: "#fff",
+  display: "grid",
+  gridTemplateColumns: "420px 1fr",
+  gap: 16,
+  padding: 16,
+  fontFamily: "'Poppins', sans-serif", // 👈 add this line
+},
+
   left: {},
   right: { display: "flex", alignItems: "flex-start", justifyContent: "center" },
   h2: { margin: 0, marginBottom: 8, fontSize: 18, fontWeight: 700 },
