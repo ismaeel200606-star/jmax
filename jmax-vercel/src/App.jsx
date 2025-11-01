@@ -55,7 +55,13 @@ export default function App() {
            <TextField label="Strategy" value={strategy} onChange={setStrategy} />
            <TextField label="Jawline Type" value={jawType} onChange={setJawType} />
 
-            <TextField label="Breathing" value={breathing} onChange={setBreathing} />
+           <label style={styles.label}>Breathing
+           <select style={styles.input} value={breathing} onChange={(e) => setBreathing(e.target.value)}>
+           <option value="Nose breather">Nose breather</option>
+               <option value="Mouth breather">Mouth breather</option>
+                </select>
+                  </label>
+
             <TextField label="Appeal Level" value={appeal} onChange={setAppeal} />
           </div>
 
