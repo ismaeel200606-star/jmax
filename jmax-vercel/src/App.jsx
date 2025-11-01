@@ -1,7 +1,7 @@
 
 import React, { useMemo, useState } from "react";
 
-const MINDSETS = ["Bluepilled", "Redpilled", "Blackpilled", "Purplepilled", "Sigma"];
+const MINDSETS = ["Bluepilled", "Redpilled", "Blackpilled", "ERpilled", "Sigma"];
 const STRATEGIES = ["Genemaxx", "Looksmaxx", "Gymmaxx", "Mewing", "Moneymaxx"];
 const JAW_TYPES = ["Mogger", "Strong", "Average", "Soft", "Razor"];
 
