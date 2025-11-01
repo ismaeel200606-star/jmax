@@ -175,7 +175,7 @@ const styles = {
   titleRow: { display: "flex", alignItems: "center", gap: 12, justifyContent: "center" },
   titleText: { fontSize: 56, fontWeight: 800, letterSpacing: -1 },
   subtitle: { color: "#a1a1aa", fontSize: 20, marginTop: 4, textAlign: "center", letterSpacing: 3 },
-  infoCard: { marginTop: 18, border: "1px solid "#27272a", background: "#0a0a0a", borderRadius: 20, padding: 18 },
+  infoCard: { marginTop: 18, border: "1px solid #27272a", background: "#0a0a0a", borderRadius: 20, padding: 18 },
   progressBg: { height: 8, borderRadius: 8, background: "#1f2937", overflow: "hidden", marginTop: 6 },
   progressFg: { height: "100%" },
   bottomBadge: { position:'absolute', bottom:-46, left:'50%', transform:'translateX(-50%)', padding:'16px 36px', borderRadius:30, border:'2px solid rgba(168,85,247,.6)', background:'#0a0a0a', color:'#ddd6fe', fontSize:28, fontWeight:800, letterSpacing:1 },
