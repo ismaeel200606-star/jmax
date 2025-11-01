@@ -52,27 +52,19 @@ export default function App() {
 
           <div style={{ marginTop: 16 }}>
            <TextField label="Mindset" value={mindset} onChange={setMindset} />
-<TextField label="Strategy" value={strategy} onChange={setStrategy} />
-<TextField label="Jawline Type" value={jawType} onChange={setJawType} />
+           <TextField label="Strategy" value={strategy} onChange={setStrategy} />
+           <TextField label="Jawline Type" value={jawType} onChange={setJawType} />
 
-{/* Breathing dropdown (2 options) */}
-<label style={styles.label}>Breathing
-  <select style={styles.input} value={breathing} onChange={(e) => setBreathing(e.target.value)}>
-    <option value="Nose breather">Nose breather</option>
-    <option value="Mouth breather">Mouth breather</option>
-  </select>
-</label>
+           <label style={styles.label}>Breathing
+           <select style={styles.input} value={breathing} onChange={(e) => setBreathing(e.target.value)}>
+           <option value="Nose breather">Nose breather</option>
+               <option value="Mouth breather">Mouth breather</option>
+                </select>
+                  </label>
 
-<TextField label="Appeal Level" value={appeal} onChange={setAppeal} />
+            <TextField label="Appeal Level" value={appeal} onChange={setAppeal} />
+          </div>
 
-{/* PSL Scale dropdown (1–8) */}
-<label style={styles.label}>PSL Scale
-  <select style={styles.input} value={pslScore} onChange={(e) => setPslScore(e.target.value)}>
-    {[1,2,3,4,5,6,7,8].map(num => (
-      <option key={num} value={num.toString()}>{num}</option>
-    ))}
-  </select>
-</label>
           <div style={{ marginTop: 20 }}>
             {Object.keys(bars).map((key) => (
               <ColorSlider key={key} label={`Bar • ${key}`} value={bars[key]} onChange={(v) => setBars((b) => ({ ...b, [key]: v }))} />
