@@ -86,12 +86,10 @@ export default function App() {
       </div>
 
       <div style={styles.right}>
-        {/* 👇 This wrapper applies a global scale to the whole card */}
-  <div style={{ transform: "scale(0.9)", transformOrigin: "top center" }}>
-    <div ref={cardRef} style={styles.cardOuter}>
-      <div style={styles.avatarWrap}>
-        <div style={{ ...styles.avatarCircle, ...circleStyle }} />
-      </div>
+       <div style={styles.cardOuter}>
+    <div style={styles.avatarWrap}>
+      <div style={{ ...styles.avatarCircle, ...circleStyle }} />
+    </div>
           <div style={styles.titleRow}> 
             <div style={styles.titleText}>{title}</div>
           </div>
