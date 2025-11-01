@@ -192,7 +192,13 @@ const styles = {
 },
 
   left: {},
-  right: { display: "flex", alignItems: "flex-start", justifyContent: "center" },
+  right: {
+  display: "flex",
+  alignItems: "flex-start",
+  justifyContent: "center",
+  paddingTop: 100, // 👈 pushes the card lower down the page
+},
+
   h2: { margin: 0, marginBottom: 8, fontSize: 18, fontWeight: 700 },
   panel: { background: "#0a0a0a", border: "1px solid #27272a", borderRadius: 16 },
   label: { display: "block", fontSize: 12, color: "#a1a1aa", textTransform: "uppercase", marginBottom: 4 },
